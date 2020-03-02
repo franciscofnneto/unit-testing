@@ -2,6 +2,9 @@ package school.cesar.unit;
 
 public class Sorting {
 
+    private Sorting() {
+    }
+
     public static void bubbleSort(int[] array) {
         int len = array.length;
 

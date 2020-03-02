@@ -7,7 +7,10 @@ package school.cesar.unit;
  * For example, the years 1700, 1800, and 1900 were not leap years, but the years 1600 and 2000 were.
  */
 public class LeapYear {
-    
+
+    private LeapYear() {
+    }
+
     static boolean isLeapYear(int year) {
         if (year % 400 == 0) {
             return true;
@@ -17,10 +20,6 @@ public class LeapYear {
             return false;
         }
 
-        if (year % 4 == 0) {
-            return true;
-        }
-
-        return false;
+        return year % 4 == 0;
     }
 }

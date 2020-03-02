@@ -1,7 +1,10 @@
 package school.cesar.unit;
 
 public class BodyMassIndex {
-    
+
+    private BodyMassIndex() {
+    }
+
     public static String calculate(float bmi) {
         if (bmi < 17) {
             return "Severely underweight";
